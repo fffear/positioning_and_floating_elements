@@ -1,0 +1,84 @@
+/* header */
+.page-header {
+  border-bottom: 1px rgb(190, 190, 190) solid;
+  position: absolute;
+  background: white;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 42px;
+  padding: 0 15px;
+}
+
+/* nav grid container */
+.page-header-nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, auto) 1fr repeat(2, auto);
+  justify-items: center;
+  align-content: center;
+  height: 42px;
+}
+
+/* nav grid list container */
+.page-header-nav li {
+  border-radius: 5px;
+  display: grid;
+  margin: 0 5px;
+  height: 32px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  align-content: center;
+}
+
+.page-header-nav .left-nav-icon {
+  height: 16px;
+  margin-top: 3px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.page-header-nav .left-nav-icon:hover {
+  background: rgb(240, 240, 240);
+}
+
+.page-header-nav .space-and-cosmos {
+  color: black;
+  text-decoration-line: none;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 14.25px;
+}
+
+.page-header-nav .space-and-cosmos:hover {
+  text-decoration-line: underline;
+}
+
+/* header heading */
+.page-header-heading {
+  height: 26px;
+  width: 195px;
+  margin-top: 6px;
+}
+
+.right-nav-icon {
+  background: #6288a5;
+  border: 1px solid rgb(50, 104, 145);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.right-nav-icon a {
+  color: #fff;
+  line-height: 32px;
+  padding: 0 10px;
+  text-decoration-line: none;
+}
+
+.right-nav-icon a:hover {
+  background: #326891;
+}
+
+/* main */
+main {
+  margin-top: 42px;
+}
