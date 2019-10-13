@@ -1,7 +1,7 @@
-/* header */
+/* fixed positioned page header */
 .page-header {
   border-bottom: 1px rgb(190, 190, 190) solid;
-  position: absolute;
+  position: fixed;
   background: white;
   left: 0;
   top: 0;
@@ -81,4 +81,13 @@
 /* main */
 main {
   margin-top: 42px;
+}
+
+/* bottom fixed positioned section */
+.fixed-bottom-prompt {
+  background-color: yellowgreen;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
