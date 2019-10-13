@@ -1,3 +1,7 @@
+body {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
 /* fixed positioned page header */
 .page-header {
   border-bottom: 1px rgb(190, 190, 190) solid;
@@ -25,7 +29,6 @@
   display: grid;
   margin: 0 5px;
   height: 32px;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   text-transform: uppercase;
   align-content: center;
 }
@@ -81,13 +84,40 @@
 /* main */
 main {
   margin-top: 42px;
+  margin-bottom: 55px;
 }
 
 /* bottom fixed positioned section */
 .fixed-bottom-prompt {
-  background-color: yellowgreen;
+  background-color: white;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
+  border-top: 1px black solid;
+}
+
+.fixed-bottom-prompt a {
+  height: 55px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column; 
+  align-items: center;
+  font-size: 15px;
+  text-decoration-line: none;
+  color: black;
+}
+
+.fixed-bottom-prompt a span {
+  text-align: center;
+  
+}
+
+.fixed-bottom-prompt a span:nth-child(1) {
+  margin-right: -100px;
+}
+
+.fixed-bottom-prompt a span:nth-child(2) {
+  margin-right: 100px;
 }
