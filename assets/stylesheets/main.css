@@ -682,3 +682,178 @@ svg:hover {
   bottom: -14px;
 }
 */
+
+
+/* 
+Outer Grid Container
+  2fr ad section
+    grid container 3 columns, 2 rows
+
+    Editors Picks- 3 columns, 1 row
+
+  1fr side most popular section
+    Most Popular List
+
+*/
+
+.article-suggestions {
+
+  display: grid;
+  grid-column-gap: 25px;
+  padding: 0 70px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.related-suggestions {
+  border-top: 1px black solid;
+}
+
+.related-suggestions img {
+  height: 184px;
+  width: 100%;
+}
+
+.related-suggestions time {
+  color: rgb(155, 155, 155);
+  font-size: 12px;
+}
+
+/* climate change image */
+.related-suggestions .climate-change-paid-post img:last-child {
+  height: 25px;
+  width: 80px;
+}
+
+.related-suggestions .climate-change-paid-post {
+  background: rgb(212, 212, 212);
+}
+
+.related-suggestions h2 {
+  font-size: 18px;
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+  line-height: 20px;
+}
+
+.related-suggestions h5 {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.related-suggestions h5 a {
+  color: black;
+  text-decoration-line: none;
+}
+
+.related-suggestions h5 a:hover {
+  text-decoration-line: underline;
+}
+
+.most-popular {
+  border-top: 1px black solid;
+  padding-right: 100px;
+}
+
+.most-popular h5 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.most-popular > a {
+  display: block;
+  font-size: 18px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px rgb(202, 202, 202) solid;
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+  line-height: 22px;
+  color: black;
+  font-weight: 500;
+  text-decoration-line: none;
+}
+
+.most-popular > a:hover {
+  color: grey;
+}
+
+.space-and-cosmos-suggestions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.space-and-cosmos-suggestions a {
+  text-decoration-line: none;
+}
+
+.space-and-cosmos-suggestions a {
+  color: black;
+}
+
+.space-and-cosmos-suggestions a:hover {
+  color: rgb(168, 168, 168);
+}
+
+.space-and-cosmos-suggestions figcaption {
+  color: grey;
+  font-size: 10px;
+  text-align: right;
+}
+
+.related-suggestions .climate-change-paid-post figcaption {
+  text-align: left;
+  font-size: 10px;
+  color: black;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.related-suggestions .climate-change-paid-post h2 {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.space-and-cosmos-suggestions > * {
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+
+/* editors picks bottom */
+.editors-picks-bottom {
+  border-top: 1px black solid;
+  margin-top: 10px;
+}
+
+.editors-picks-bottom a {
+  text-decoration-line: none;
+}
+
+.editors-picks-bottom a h2 {
+  color: black;
+}
+
+.editors-picks-bottom figcaption {
+  font-size: 10px;
+  color: grey;
+  text-align: right;
+}
+
+.editors-picks-bottom h2:hover {
+  color: grey;
+}
+
+.editors-picks-bottom-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 15px;
+}
+
+.editors-picks-bottom-container > * {
+  padding-bottom: 10px;
+}
+
+.editors-picks-bottom-container img[alt="modern love"] {
+  margin-bottom: 10px;
+}
