@@ -426,23 +426,9 @@ main h1 {
   width: 100%;
 }
 
-
 .bicep-2-telescope-img figcaption div {
   font-size: 12px;
   color: #888;
-}
-
-.speech-bubble {
-  display: inline-block;
-  width: 40px;
-  margin: 50px auto;
-  border: 4px solid #00bfb6;
-  padding: 5px;
-  text-align: center;
-  font-weight: 900;
-  color: black;
-  font-family: arial;
-  position:relative;
 }
 
 .link-icons {
@@ -465,7 +451,6 @@ main h1 {
   border: 1px rgb(50, 104, 145) solid;
   color: #fff;
   font-weight: bold;
-  
 }
 
 .bottom-of-article button:first-of-type:hover {
@@ -487,9 +472,9 @@ main h1 {
   align-items: center;
 }
 
-.social-media-links div:nth-of-type(1) {
+.social-media-links > div:nth-of-type(1) {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
   align-items: center;
 }
 
@@ -506,14 +491,15 @@ main h1 {
   margin-left: 5px;
   border: none;
   background: white;
+  text-decoration-line: none;
+}
+
+.social-media-links a:nth-child(n + 5):hover {
+  
 }
 
 .social-media-links div:nth-of-type(1) a:hover {
   background: #fff;
-}
-
-.social-media-links > * {
-  /* border: 1px solid black; */
 }
 
 /* bookmark icon */
@@ -533,7 +519,6 @@ main h1 {
 }
 
 .sign-up-right-side-container {
-
   width: 50%;
 }
 
@@ -600,20 +585,31 @@ main h1 {
   display: grid;
   grid-template-columns: auto 1fr;
   padding: 10px;
+  text-decoration-line: none;
+}
+
+.editors-picks-right-side a:hover {
+  text-decoration-line: underline;
 }
 
 .editors-picks-right-side-container h2 {
   font-weight: bold;
+  color: black;
+  text-decoration-line: none;
 }
 
-.editors-picks-right-side-container ul li:last-child {
+.editors-picks-right-side-container li:last-child {
   background: rgb(211, 211, 211);
   font-size: 10px;
+}
 
+.editors-picks-right-side-container li:last-child a:hover {
+  text-decoration-line: none;
 }
 
 .editors-picks-right-side h3 {
   width: auto;
+  color: black;
 }
 
 /* create account prompt center grid */
@@ -638,7 +634,6 @@ main h1 {
   background: transparent;
 }
 
-
 .create-account-center-prompt-content {
   position: absolute;
   left: 50%;
@@ -646,12 +641,10 @@ main h1 {
   transform: translate(-50%, -50%);
 }
 
-.create-account-center-prompt div:first-child {
-
-}
-
-.create-account-center-prompt-content div:last-child {
+.create-account-center-prompt-content a {
   color: rgb(50, 104, 145);
+  text-decoration-line: none;
+
 }
 
 /* svg icons on hover */
@@ -659,45 +652,56 @@ svg:hover {
   filter: invert(87%) sepia(0%) saturate(3%) hue-rotate(140deg) brightness(93%) contrast(90%);
 }
 
-/*
+
+/* speech bubble */
+.speech-bubble {
+  display: inline-block;
+  width: 30px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-weight: 900;
+  color: black;
+  font-family: arial;
+  position:relative;
+  border-radius: 4px;
+}
+
+.speech-bubble:hover {
+  border: 1px rgb(214, 214, 214) solid;
+}
+
 .speech-bubble:before {
   content: "";
   position: absolute;
-  border-left: 10px solid transparent;
-  border-right: 10px solid #00bfb6;
-  border-top: 10px solid #00bfb6;
-  border-bottom: 10px solid transparent;
-  right: 150px;
-  bottom: -20px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid black;
+  border-top: 7px solid black;
+  border-bottom: 7px solid transparent;
+  right: 9px;
+  bottom: -14px;
+}
+
+.speech-bubble:hover:before {
+  content: "";
+  border-right: 8px solid rgb(216, 216, 216);
+  border-top: 8px solid rgb(218, 218, 218);
 }
 
 .speech-bubble:after {
   content: "";
   position: absolute;
-  border-left: 7px solid transparent;
-  border-right: 7px solid white;
-  border-top: 7px solid white;
-  border-bottom: 7px solid transparent;
-  right: 152px;
-  bottom: -14px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid white;
+  border-top: 6px solid white;
+  border-bottom: 6px solid transparent;
+  right: 10px;
+  bottom: -12px;
 }
-*/
 
-
-/* 
-Outer Grid Container
-  2fr ad section
-    grid container 3 columns, 2 rows
-
-    Editors Picks- 3 columns, 1 row
-
-  1fr side most popular section
-    Most Popular List
-
-*/
 
 .article-suggestions {
-
   display: grid;
   grid-column-gap: 25px;
   padding: 0 70px;
